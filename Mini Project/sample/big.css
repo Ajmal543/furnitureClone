@@ -1,0 +1,15 @@
+#MainImg{
+    width: 468px;
+    background-color: rgb(254, 239, 220);
+}
+.small-img{
+    width: 100px;
+    background-color: rgb(254, 239, 220);
+    
+}
+.cart-page {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: rgb(148, 133, 21);
+}

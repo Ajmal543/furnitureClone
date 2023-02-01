@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    /* position: relative; */
+    visibility: visible;
+    
+}
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left: 20px;
+    color: #9b9e64;
+}
+
+/* ----------Image Text------------------ */
+
+.para {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#carddd {
+    border: none !important;
+}
+
+.subtitle {
+    margin: 210px;
+    font-size: 1.5rem;
+}
+
+.title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 1000;
+    font-size: 3.5rem;
+}
+
+#banner-style-2 {
+    display: none;
+}
+
+
+/* --------------collection product start  */
+.product-category {
+    font-size: 40px;
+    font-weight: 700;
+    color: #52636d;
+}
+
+.gifts {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 10px;
+    color: #9aa1a6;
+
+}
+
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.product-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.product-thumb {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.discount-tag {
+    position: absolute;
+    background: rgb(150, 145, 145);
+    padding: 5px;
+    /* border-radius: 6px; */
+    color: rgb(255, 255, 255);
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+
+}
+
+.card-btn {
+    font-family: poppins;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    transition: 0.5s all;
+    cursor: pointer;
+    opacity: 0;
+
+}
+
+.product-card:hover .card-btn {
+    opacity: 1;
+}
+
+.card-btn:hover {
+    background: #3d3d3d;
+    color: #fff;
+}
+
+/* --------popup----  */
+.popup{
+    width: 400px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50% -50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50% -50%)scale(1);
+
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+/* -----login ended---------------------- */
+.star {
+    color: #9ca043;
+}
+
+.banner {
+    width: 100%;
+}
+/* ----footer--------------- */
+.footer{
+    background-color: #3c3c3c;
+}
+.inform{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+/* footer tag ---  */
+ul li{
+    list-style-type: none;
+    transition: 0.3s all;
+}
+ul li a:hover{
+    color: rgb(244, 19, 19);
+}
+
+
+/* mail----  */
+
+.btn-mail {
+    min-height: 50px;
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px;
+    border: none;
+    font-weight: 600;
+}
+.year{
+    font-weight: 200;
+    font-size: medium;
+}
+
+.year span{
+    font-weight: 600;
+}
+
+.collect{
+    margin-left: 175px;
+    margin-bottom: 150px;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    .banner-style-1 {
+        display: none;
+    }
+
+    .chair-div {
+        width: 100% !important;
+    }
+
+    #banner-style-2 {
+        display: block;
+        height: 200px;
+        width: 100%;
+    }
+}
+
+/* Mobile Screen */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .subtitle {
+        margin: 40px;
+    }
+
+    .banner-style-1 {
+        display: none;
+    }
+
+    .subtitle h4 {
+        font-size: 0.5rem;
+    }
+
+    .subtitle h2 {
+        font-size: 1rem;
+    }
+
+    .subtitle button {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .banner-style-1 {
+        display: none;
+    }
+
+    .chair-div {
+        width: 100% !important;
+    }
+
+    #banner-style-2 {
+        display: block;
+        height: 200px;
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .subtitle {
+        margin: 50px;
+    }
+
+    .subtitle h4 {
+        font-size: 0.9rem;
+    }
+
+    .subtitle h2 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle button {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .banner-style-1 {
+        display: none;
+    }
+
+    .chair-div {
+        width: 100% !important;
+    }
+
+    #banner-style-2 {
+        display: inline;
+        height: 300px;
+        width: 100%;
+    }
+
+}
+
+/* Small laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .subtitle {
+        margin: 100px;
+    }
+
+    .subtitle h4 {
+        font-size: 1rem;
+    }
+
+    .subtitle h2 {
+        font-size: 2rem;
+    }
+
+    .subtitle button {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .banner-bg-img {
+        width: 100%;
+    }
+
+}
+
+/* Standard Laptops */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .subtitle {
+        margin: 100px;
+    }
+
+    .subtitle h4 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle h2 {
+        font-size: 3rem;
+    }
+
+    .subtitle button {
+        width: 120px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
+/* big screens */
+@media screen and (min-width: 1201px) {}

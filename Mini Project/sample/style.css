@@ -1,0 +1,12 @@
+
+.filter-button-group .btn:hover{
+    color: #fff !important;
+}
+
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50px;
+}
